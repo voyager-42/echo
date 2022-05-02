@@ -247,6 +247,12 @@ public class UserService implements CommunityConstant {
         return rows;
     }
 
+    /**
+     * 更新密码
+     * @param userId
+     * @param newPassword
+     * @return
+     */
     public int updatePassword(int userId, String newPassword){
         User user = userMapper.selectById(userId);
         // 重新加盐加密

@@ -47,7 +47,7 @@
 
     <!--修改用户头像-->
     <update id="updateHeader">
-        update user set header_url = #{headerUrl} = where id = #{id}
+        update user set header_url = #{headerUrl} where id = #{id}
     </update>
 
     <!--修改密码-->

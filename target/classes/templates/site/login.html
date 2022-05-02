@@ -78,6 +78,7 @@
 	<script th:src="@{/js/popper.min.js}"></script>
 	<script th:src="@{/js/bootstrap.min.js}"></script>
 	<script th:src="@{/js/global.js}"></script>
+	<!--刷新验证码js方法-->
 	<script>
 		function refresh_kaptcha() {
 			var path = CONTEXT_PATH + "/kaptcha?p=" + Math.random();
